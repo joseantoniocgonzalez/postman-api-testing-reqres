@@ -14,6 +14,13 @@ Colección de Postman para practicar y demostrar testing básico de APIs REST us
    - `postman/JSONPlaceholder.postman_collection.json`
 2. Ejecuta las requests y revisa **Test Results**.
 
+## Evidence
+
+### POST /posts (201 Created)
+
+![POST /posts - 201 Created](docs/jsonplaceholder-post-201.png)
+
+
 ## Estructura
 - `postman/JSONPlaceholder.postman_collection.json`
 
