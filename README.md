@@ -25,3 +25,7 @@ Colección de Postman para practicar requests y tests básicos contra la API pú
 
 **GET /posts — 200 OK**
 ![GET 200](docs/jsonplaceholder-get-200.png)
+
+## Recursos
+- JSONPlaceholder: https://jsonplaceholder.typicode.com/
+- Postman (Docs): https://learning.postman.com/
