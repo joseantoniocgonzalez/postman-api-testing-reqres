@@ -1,28 +1,27 @@
-# Postman API Testing — JSONPlaceholder
+## JSONPlaceholder — Postman API Testing
 
-Colección de Postman para practicar y demostrar testing básico de APIs REST usando JSONPlaceholder.
+Colección de Postman para practicar requests y tests básicos contra la API pública de JSONPlaceholder.
 
-## Qué incluye
-- Requests: GET /posts, POST /posts
-- Tests básicos en Postman:
-  - Validación de status code (200 / 201)
-  - Validación de estructura JSON (array no vacío, existencia de id)
-  - Validación de campos en respuesta (title/body/userId)
+### Qué incluye
+- GET `/posts` + tests:
+  - Status code = 200
+  - Response es un array no vacío
+- POST `/posts` + tests:
+  - Status code = 201
+  - Response contiene `id`
+  - La response refleja `title/body/userId`
 
-## Cómo usar
-1. Importa en Postman:
-   - `postman/JSONPlaceholder.postman_collection.json`
-2. Ejecuta las requests y revisa **Test Results**.
+### Cómo usar
+1. Importa el archivo: `postman/JSONPlaceholder.postman_collection.json`
+2. Ejecuta las requests desde Postman (Send) o con Runner.
+3. Revisa la pestaña **Test Results**.
 
-## Evidence
+### Evidencias (capturas)
+**POST /posts — Body enviado + 201 Created**
+![POST 201](docs/jsonplaceholder-post-201.png)
 
-### POST /posts (201 Created)
+**POST /posts — Tests pasando**
+![POST tests](docs/jsonplaceholder-post-tests.png)
 
-![POST /posts - 201 Created](docs/jsonplaceholder-post-201.png)
-
-
-## Estructura
-- `postman/JSONPlaceholder.postman_collection.json`
-
-## Notas
-JSONPlaceholder es una API pública para pruebas. El POST devuelve un `id` simulado.
+**GET /posts — 200 OK**
+![GET 200](docs/jsonplaceholder-get-200.png)
